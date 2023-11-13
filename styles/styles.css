@@ -1,0 +1,82 @@
+body{
+    margin: 5%;
+    background-color:#cf73ed ;
+    font-family:'Times New Roman', Times, serif;
+
+}
+header{
+    text-align: center;
+}
+a:hover{
+    color: red;
+}
+#cabeza{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    border-radius: 5px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;   
+    background-color: white;
+}
+
+nav a{
+    font-size: xx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    text-decoration: none;
+}
+
+.promocion{
+    display:grid;
+    grid-template-columns: 1;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.caja {
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    border: 1px black solid;
+    background-color: white;
+}
+.caja p{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
+.caja a{
+    justify-self: left;
+    text-decoration:none ;
+    padding-left: 15px;
+    color: blue;
+    }   
+.fondo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+    text-align: justify;
+}
+table th{
+    color: red;
+    border: 1px black solid;
+}
+table td{
+    color: blue;
+    border: 1px black solid;
+}
+/*If the screen is 767px or less this will activate*/
+@media(max-width:767px){
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    
+}
